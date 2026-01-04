@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+ tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="control.GenerateControl">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="193.0" layoutY="50.0" prefHeight="35.0" prefWidth="176.0" />
+                  <Separator layoutY="122.0" prefHeight="2.0" prefWidth="600.0" />
+                  <Button layoutX="416.0" layoutY="55.0" mnemonicParsing="false" text="コピー" />
+                  <Button layoutX="261.0" layoutY="312.0" mnemonicParsing="false" text="生成" />
+                  <CheckBox layoutX="130.0" layoutY="169.0" mnemonicParsing="false" text="アルファベット" fx:id="alphabet" onAction="#onChecked"/>
+                  <CheckBox layoutX="270.0" layoutY="169.0" mnemonicParsing="false" text="数字" fx:id="number"/>
+                  <CheckBox layoutX="394.0" layoutY="169.0" mnemonicParsing="false" text="記号" fx:id="specialCharacters"/>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
